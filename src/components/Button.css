@@ -1,6 +1,7 @@
 .cta {
   appearance: none;
   border: none;
+  width: 248px;
   outline: none;
   z-index: 1;
   cursor: pointer;
@@ -252,7 +253,7 @@
 
 .cta:focus-visible .arrow,
 .cta:hover .arrow {
-  width: 255px;
+  width: 243px;
   z-index: 2;
 }
 
