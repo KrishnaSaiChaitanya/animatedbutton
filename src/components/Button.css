@@ -2,6 +2,7 @@
   appearance: none;
   border: none;
   outline: none;
+  z-index: 1;
   cursor: pointer;
   display: inline-flex;
   background-color: #222;
@@ -17,6 +18,8 @@
 .cta .arrow {
   position: absolute;
   left: 2px;
+
+  z-index: 1;
   top: 2px;
   display: flex;
   width: 36px;
@@ -29,6 +32,7 @@
 .cta .arrow div {
   position: absolute;
   width: 100%;
+  z-index: -1;
   height: 16px;
   left: 50%;
   top: 50%;
@@ -47,6 +51,7 @@
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 0;
 }
 
 .cta .arrow div:before {
@@ -247,7 +252,8 @@
 
 .cta:focus-visible .arrow,
 .cta:hover .arrow {
-  width: 194px;
+  width: 255px;
+  z-index: 2;
 }
 
 @keyframes move-right {
